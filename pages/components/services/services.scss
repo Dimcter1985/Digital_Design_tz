@@ -1,0 +1,36 @@
+.section {
+  width: 95%;
+  max-width: 1280px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.title {
+  font-weight: bold;
+  font-size: $titleBig;
+  margin-bottom: 55px;
+  margin-top: 70px;
+
+  &--block {
+    text-transform: uppercase;
+    margin-top: 50px;
+    letter-spacing: 2px;
+    margin-bottom: 5px;
+  }
+}
+
+.block {
+  width: 100%;
+  background-color: $white;
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 10px 0 10px;
+}
+
+.block__text {
+  font-size: $txtMedium;
+}
