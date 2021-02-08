@@ -1,3 +1,6 @@
+@import '../../styles/variables.scss';
+@import '../../styles/media.scss';
+
 .slider {
   position: relative;
   width: 100%;
@@ -23,13 +26,14 @@
   background-size: cover;
   width: 35px;
   height: 105px;
+  cursor: pointer;
 
-  &--left {
+  &_left {
     left: 4%;
     background-image: url('./images/Arrow_L.png');
   }
 
-  &--right {
+  &_right {
     right: 4%;
     background-image: url('./images/Arrow_R.png');
   }
@@ -57,7 +61,7 @@
   }
 }
 
-.slider__slide-pic {
+.slider__pic {
   width: 180px;
   height: 180px;
   background-color: $gray;
@@ -77,14 +81,14 @@
   }
 }
 
-.slider__slide-name {
+.slider__name {
   font-weight: bold;
   font-size: $titleSmall;
   text-transform: uppercase;
   margin-bottom: 10px;
 }
 
-.slider__slide-txt {
+.slider__txt {
   text-align: center;
   padding-left: 50px;
   padding-right: 50px;

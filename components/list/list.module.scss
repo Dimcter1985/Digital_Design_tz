@@ -1,3 +1,6 @@
+@import '../../styles/variables.scss';
+@import '../../styles/media.scss';
+
 .list {
   display: flex;
   flex-wrap: wrap;
@@ -46,13 +49,13 @@
 
 }
 
-.list__item-name {
+.list__name {
   font-weight: bold;
   font-size: $titleSmall;
   text-transform: uppercase;
   margin-bottom: 7px;
 }
 
-.list__item-txt {
+.list__txt {
   padding-right: 15px;
 }

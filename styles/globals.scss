@@ -1,9 +1,5 @@
 @import './fonts.scss';
-@import './media.scss';
 @import './variables.scss';
-@import '../pages/components/services/services.scss';
-@import '../pages/components/slider/slider.scss';
-@import '../pages/components/list/list.scss';
 
 * {
   box-sizing: border-box;
@@ -20,10 +16,6 @@ body {
   font-family: "Titillium Web", Helvetica, sans-serif;
   background-color: $blue;
   width: 100%;
-}
-
-a {
-  text-decoration: none;
 }
 
 ul li {
