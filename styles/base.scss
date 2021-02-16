@@ -1,0 +1,19 @@
+.section {
+  width: 95%;
+  max-width: 1280px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.title {
+  font-weight: bold;
+  font-size: $titleBig;
+  margin-bottom: 55px;
+  margin-top: 70px;
+
+  &_team {
+    margin-top: 28px;
+  }
+}

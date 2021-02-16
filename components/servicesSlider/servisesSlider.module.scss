@@ -8,7 +8,7 @@
   padding-top: 80px;
 }
 
-.slider__wrap {
+.wrap {
   position: relative;
   overflow: hidden;
   max-width: 890px;
@@ -16,7 +16,7 @@
   margin: 0 auto;
 }
 
-.slider__control {
+.control {
   position: absolute;
   top: 28%;
   display: flex;
@@ -30,20 +30,20 @@
 
   &_left {
     left: 4%;
-    background-image: url('./images/Arrow_L.png');
+    background-image: url('../../public/Arrow_L.png');
   }
 
   &_right {
     right: 4%;
-    background-image: url('./images/Arrow_R.png');
+    background-image: url('../../public/Arrow_R.png');
   }
 }
 
-.slider__slides {
+.slides {
   display: flex;
 }
 
-.slider__slide {
+.slide {
   flex: 0 0 33.33%;
   max-width: 33.33%;
   display: flex;
@@ -61,34 +61,28 @@
   }
 }
 
-.slider__pic {
+.pic {
   width: 180px;
   height: 180px;
-  background-color: $gray;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   border-radius: 50%;
   margin-bottom: 45px;
-
-  &::before {
-    content: '';
-    width: 85px;
-    height: 70px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-image: url('./images/img.png');
-  }
 }
 
-.slider__name {
+.img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.name {
   font-weight: bold;
   font-size: $titleSmall;
   text-transform: uppercase;
   margin-bottom: 10px;
 }
 
-.slider__txt {
+.txt {
   text-align: center;
   padding-left: 50px;
   padding-right: 50px;
