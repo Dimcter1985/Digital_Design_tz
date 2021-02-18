@@ -1,7 +1,7 @@
-import styles from './servicesList.module.scss';
-import Ellipse from '../../public/Ellipse1.png'
+import styles from './list.module.scss';
+import Ellipse from '../../images/Ellipse1.png'
 
-export default function ServicesList () {
+export default function List () {
   const items = [
     { 
       id: 1,

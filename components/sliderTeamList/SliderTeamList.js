@@ -1,5 +1,11 @@
-import styles from './teamSlider.module.scss';
-import TeamImg from '../../public/Mugshot.png'
+import SliderImage from '../sliderImage/SliderImage'
+import SliderPost from '../sliderPost/SliderPost'
+import SliderItem from '../sliderItem/SliderItem'
+import SliderName from '../sliderName/SliderName'
+import SliderSocial from '../sliderSocial/SliderSocial'
+import SliderInfo from '../sliderInfo/SliderInfo'
+import TeamImg from '../../images/Mugshot2.png'
+import styles from './sliderTeamList.module.scss';
 
 export default function TeamSlider () {
   const slides = [
@@ -42,25 +48,16 @@ export default function TeamSlider () {
   ];
 
   let slider = slides.map((slide) => (
-    <li key={slide.id} className={styles.slide}>
-        <div className={styles.pic}>
-          <img src={slide.image.pic} alt={slide.image.alt} className={styles.img}></img>
-        </div>
-        <h3 className={styles.name}>{slide.name}</h3>
-        <span className={styles.post}>{slide.post}</span>
-        <p className={styles.txt}>{slide.text}</p>
-        <ul className={styles.social}>
-          <li><a className={`${styles.link} ${styles.link_f}`} href={slide.linkF}></a></li>
-          <li><a className={`${styles.link} ${styles.link_g}`} href={slide.linkG}></a></li>
-        </ul>
-    </li>
+    <SliderItem key={slide.id} classNameSlide={styles.slide_team_list}>
+      <SliderImage src={slide.image.pic} alt={slide.image.alt} classNameImg={styles.img_rect} classNamePic={styles.pic_big}>
+        <SliderInfo>
+          <SliderName classNameTeamList={styles.name_team_list}>{slide.name}</SliderName>
+          <SliderPost>{slide.post}</SliderPost>
+          <SliderSocial classNameSocial={styles.social_team_list}  classNameLinkF={styles.link_team_list} classNameLink={styles.link_team_list_f} classNameLinkG={styles.link_team_list_g}></SliderSocial>
+        </SliderInfo>
+      </SliderImage>
+    </SliderItem>
   ));
 
-  return  (<div className={styles.slider}>
-            <div className={`${styles.control} ${styles.control_left}`}></div>
-              <div className={styles.wrap}>
-                <ul className={styles.slides}>{slider}</ul>
-              </div>
-            <div className={`${styles.control} ${styles.control_right}`}></div>
-          </div>)
+  return slider
 }

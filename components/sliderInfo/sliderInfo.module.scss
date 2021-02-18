@@ -1,0 +1,21 @@
+@import '../../styles/variables.scss';
+@import '../../styles/media.scss';
+
+.info {
+  background-color: $darkGrey;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  color: $white;
+  padding-top: 37px;
+  padding-left: 32px;
+  padding-right: 30px;
+  opacity: 0;
+  transition: opacity .5s;
+
+  &:hover {
+    opacity: 1;
+  }
+}

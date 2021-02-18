@@ -1,0 +1,24 @@
+@import '../../styles/variables.scss';
+@import '../../styles/media.scss';
+
+.social {
+  display: flex;
+  margin-right: 20px;
+}
+
+.link {
+  display: block;
+  width: 35px;
+  height: 35px;
+  margin-left: 20px;
+  cursor: pointer;
+
+  &_f {
+    background-image: url('../../images/Social1.svg');
+  }
+
+  
+  &_g {
+    background-image: url('../../images/Social2.svg');
+  }
+}

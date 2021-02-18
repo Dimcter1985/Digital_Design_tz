@@ -1,0 +1,61 @@
+import SliderImage from '../sliderImage/SliderImage'
+import SliderPost from '../sliderPost/SliderPost'
+import SliderItem from '../sliderItem/SliderItem'
+import SliderName from '../sliderName/SliderName'
+import SliderText from '../sliderText/SliderText'
+import SliderSocial from '../sliderSocial/SliderSocial'
+import TeamImg from '../../images/Mugshot2.png'
+import styles from './sliderTeam.module.scss'
+
+export default function TeamSlider () {
+  const slides = [
+    {
+      id: 1,
+      image: {pic: TeamImg, alt: 'some photo'},
+      name: 'anne hathaway',
+      post: 'CEO / Marketing Guru',
+      text: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy.',
+      linkF: '#',
+      linkG: '#'
+    },
+    {
+      id: 2,
+      image: {pic: TeamImg, alt: 'some photo'},
+      name: 'anne hathaway',
+      post: 'CEO / Marketing Guru',
+      text: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy.',
+      linkF: '#',
+      linkG: '#'
+    },
+    {
+      id: 3,
+      image: {pic: TeamImg, alt: 'some photo'},
+      name: 'anne hathaway',
+      post: 'CEO / Marketing Guru',
+      text: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy.',
+      linkF: '#',
+      linkG: '#'
+    },
+    {
+      id: 4,
+      image: {pic: TeamImg, alt: 'some photo'},
+      name: 'anne hathaway',
+      post: 'CEO / Marketing Guru',
+      text: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy.',
+      linkF: '#',
+      linkG: '#'
+    }
+  ];
+
+  let slider = slides.map((slide) => (
+    <SliderItem key={slide.id}>
+      <SliderImage src={slide.image.pic} alt={slide.image.alt}></SliderImage>
+      <SliderName classNameName={styles.name_team}>{slide.name}</SliderName>
+      <SliderPost>{slide.post}</SliderPost>
+      <SliderText classNameText={styles.text_team}>{slide.text}</SliderText>
+      <SliderSocial></SliderSocial>
+    </SliderItem>
+  ));
+
+  return slider
+}
