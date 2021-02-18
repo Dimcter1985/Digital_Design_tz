@@ -1,0 +1,12 @@
+@import '../../../styles/variables.scss';
+
+.title {
+  font-weight: bold;
+  font-size: $titleBig;
+  margin-bottom: 55px;
+  margin-top: 70px;
+  text-transform: uppercase;
+  margin-top: 50px;
+  letter-spacing: 2px;
+  margin-bottom: 5px;
+}

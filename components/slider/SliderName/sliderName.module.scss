@@ -1,0 +1,8 @@
+@import '../../../styles/variables.scss';
+
+.name {
+  font-weight: bold;
+  font-size: $titleSmall;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
