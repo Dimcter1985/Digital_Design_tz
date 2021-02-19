@@ -1,10 +1,10 @@
-import Slider from '../../../../components/Slider';
-import SliderImage from '../../../../components/Slider/SliderImage'
-import SliderItem from '../../../../components/Slider/SliderItem'
-import SliderName from '../../../../components/Slider/SliderName'
-import SliderText from '../../../../components/Slider/SliderText'
-import SliderPost from '../../../../components/Slider/SliderPost'
-import SliderSocial from '../../../../components/Slider/SliderSocial'
+import Slider from '../../../../components/jkl';
+import SliderImage from '../../../../components/jkl/SliderImage'
+import SliderItem from '../../../../components/jkl/SliderItem'
+import SliderName from '../../../../components/jkl/SliderName'
+import SliderText from '../../../../components/jkl/SliderText'
+import SliderPost from '../../../../components/jkl/SliderPost'
+import SliderSocial from '../../../../components/jkl/SliderSocial'
 import TeamImg from '../../../../images/Mugshot2.png'
 import styles from './sliderTeam.module.scss'
 
