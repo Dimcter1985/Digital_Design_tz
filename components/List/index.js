@@ -1,5 +1,5 @@
 import styles from './list.module.scss';
-import Ellipse from '../../images/Ellipse1.png'
+import Ellipse from '/Users/Dmitriy/Desktop/digital_design/my-app/components/List/images/Ellipse1.png'
 
 export default function List () {
   const items = [

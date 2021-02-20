@@ -1,0 +1,22 @@
+.link {
+  display: block;
+  width: 35px;
+  height: 35px;
+  margin-left: 20px;
+  cursor: pointer;
+  
+  &_facebook {
+    background-image: url('./images/Social1.svg');
+  }
+
+  
+  &_gmail {
+    background-image: url('./images/Social2.svg');
+  }
+
+  &_white {
+    margin-left: 0;
+    margin-right: 20px;
+    filter: invert(1) brightness(2);
+  }
+}

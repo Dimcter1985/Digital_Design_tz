@@ -1,8 +1,8 @@
-import SliderServices from '../../components/SliderServices';
-import List from '../../../../components/list/';
-import BlockTitle from '../../../../components/Block/BlockTitle';
-import BlockDescription from '../../../../components/Block/BlockDescription';
-import Block from '../../../../components/Block';
+import SliderServices from 'screens/Home/components/SliderServices';
+import List from 'components/list/';
+import BlockTitle from 'components/Block/BlockTitle';
+import BlockDescription from 'components/Block/BlockDescription';
+import Block from 'components/Block';
 
 export default function Services () {
   return   (<>

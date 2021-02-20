@@ -1,9 +1,9 @@
-import BlockTitle from '../../../../components/Block/BlockTitle';
-import BlockDescription from '../../../../components/Block/BlockDescription';
-import Block from '../../../../components/Block';
-import SliderTeam from '../../components/SliderTeam';
-import SliderTeamList from '../../components/SliderTeamList';
-import SliderPoints from '../../../../components/Slider/SliderPoints';
+import BlockTitle from 'components/Block/BlockTitle';
+import BlockDescription from 'components/Block/BlockDescription';
+import Block from 'components/Block';
+import SliderTeam from 'screens/Home/components/SliderTeam';
+import SliderTeamList from 'screens/Home/components/SliderTeamSquare';
+import SliderPoints from 'components/slider/Slider/SliderPoints';
 
 export default function Services () {
   return (<>

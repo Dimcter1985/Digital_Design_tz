@@ -1,0 +1,47 @@
+.slider {
+  position: relative;
+  width: 100%;
+  margin-bottom: 95px;
+  padding-top: 80px;
+}
+
+.wrap {
+  position: relative;
+  overflow: hidden;
+  max-width: 890px;
+  width: 100%;
+  margin: 0 auto;
+
+  
+  &_variant_team {
+    max-width: 975px;
+  }
+}
+
+.slides {
+  display: flex;
+}
+
+.control {
+  position: absolute;
+  top: 28%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 35px;
+  height: 105px;
+  cursor: pointer;
+
+  &_right {
+    right: 4%;
+    background-image: url('./images/Arrow_R.png');
+  }
+
+  &_left {
+    left: 4%;
+    background-image: url('./images/Arrow_l.png');
+  }
+
+}

@@ -1,9 +1,9 @@
-import Slider from '../../../../components/Slider'
-import SliderImage from '../../../../components/Slider/SliderImage'
-import SliderItem from '../../../../components/Slider/SliderItem'
-import SliderName from '../../../../components/Slider/SliderName'
-import SliderText from '../../../../components/Slider/SliderText'
-import Img from '../../../../images/img.png'
+import Slider from 'components/slider/Slider'
+import SliderImage from 'components/slider/Slider/SliderImage'
+import SliderItem from 'components/slider/Slider/SliderItem'
+import SliderName from 'components/slider/Slider/SliderName'
+import SliderText from 'components/slider/Slider/SliderText'
+import Img from 'screens/Home/components/SliderServices/images/img.png'
 
 export default function SliderServices () {
   const slides = [
