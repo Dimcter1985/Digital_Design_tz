@@ -1,0 +1,13 @@
+@import '../../../styles/media.scss';
+
+.item {
+  width: 50%;
+  padding-left: 95px;
+  margin-bottom: 65px;
+  position: relative;
+  padding-right: 60px;
+
+  @include tablets {
+    width: 100%;
+  }
+}

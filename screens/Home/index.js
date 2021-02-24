@@ -1,11 +1,11 @@
 import Head from 'next/head';
-import Services from 'screens/Home/components/Services';
-import Team from 'screens/Home/components/Team';
-import Section from 'components/Section'
-import SectionTitle from 'components/Section/SectionTitle/'
-import styles from 'screens/Home/home.module.scss'
+import Services from './components/Services';
+import Team from './components/Team';
+import Section from 'components/section/Section';
+import SectionTitle from 'components/section/SectionTitle/';
+import styles from './home.module.scss';
 
-export default function App () {
+export default function Home () {
   return  (<>
             <Head>
               <title>Digital Design</title>
@@ -15,7 +15,7 @@ export default function App () {
               <Services/>
             </Section>
             <Section>
-              <SectionTitle classNameTeam={styles.title_team}>Team Components</SectionTitle>
+              <SectionTitle className={styles.title_team}>Team Components</SectionTitle>
               <Team/>
             </Section>
           </>

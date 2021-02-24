@@ -1,11 +1,10 @@
-import BlockTitle from 'components/Block/BlockTitle';
-import BlockDescription from 'components/Block/BlockDescription';
-import Block from 'components/Block';
-import SliderTeam from 'screens/Home/components/SliderTeam';
-import SliderTeamList from 'screens/Home/components/SliderTeamSquare';
-import SliderPoints from 'components/slider/Slider/SliderPoints';
+import BlockTitle from 'components/block/BlockTitle';
+import BlockDescription from 'components/block/BlockDescription';
+import Block from 'components/block/Block';
+import SliderTeam from './components/Slider';
+import SliderSquare from './components/SliderSquare';
 
-export default function Services () {
+export default function Team () {
   return (<>
             <Block>
               <BlockTitle>our team</BlockTitle>
@@ -23,8 +22,7 @@ export default function Services () {
                 <br></br>
                 Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.
               </BlockDescription>
-              <SliderTeamList/>
-              <SliderPoints/>
+              <SliderSquare/>
             </Block>
           </>)
 }
